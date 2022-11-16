@@ -19,6 +19,7 @@ bspc rule -a Screenkey manage=off
 setxkbmap es &
 feh --bg-fill /home/josse/Pictures/Fondos/fondo.jpg &
 nm-applet &
+volumeicon &
 /home/josse/.config/polybar/./launch.sh &
 picom &
 xsetroot -cursor_name left_ptr &
