@@ -18,6 +18,7 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 setxkbmap es &
 feh --bg-fill /home/josse/Pictures/Fondos/fondo.jpg &
+nm-applet &
 /home/josse/.config/polybar/./launch.sh &
 picom &
 xsetroot -cursor_name left_ptr &
