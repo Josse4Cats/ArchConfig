@@ -1,5 +1,19 @@
+/* Color-Scheme For All Themes*/
+
+* {
+    background:    #414868ff;
+    background-alt:    #414868ff;
+    foreground:    #ffffffff;
+    border:    #546e7aff;
+    selected:    #546e7aff;
+	logo:    #00407Aff;
+}
+
+
+
+
 configuration {
-    font:                           "Iosevka Nerd Font 10";
+    font:                           "Hack Nerd Font 10";
     show-icons:                     false;
 	icon-theme: 					"Papirus";
     display-drun: 					":";
@@ -13,14 +27,13 @@ configuration {
     location:                       3;
 }
 
-@import "colors.rasi"
 
 window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-    border-radius:                  20px;
-    height:                         27%;
+    border-radius:                  10px;
+    height:                         14%;
     width:                          12%;
     x-offset:                       -30;
     y-offset:                       70;
@@ -94,17 +107,19 @@ element {
     background-color:               @background;
     text-color:                     @foreground;
     orientation:                    horizontal;
-    border-radius:                  4px;
-    padding:                        6px 6px 6px 6px;
+    border-radius:                  1px;
+    padding:                        2px 2px 2px 2px;
 }
 
 element-icon {
-    size:                           24px;
+    size:                           2px;
     border:                         0px;
 }
 
 element-text {
     expand:                         true;
+    background-color:               @background;
+    text-color:                     @foreground;
     horizontal-align:               0;
     vertical-align:                 0;
     margin:                         2px 0px 2px 2px;
@@ -127,7 +142,7 @@ element selected {
     background-color:               @selected;
     text-color:                     @background;
     border:                  		0px;
-    border-radius:                  20px;
+    border-radius:                  10px;
     border-color:                  	@border;
 }
 
