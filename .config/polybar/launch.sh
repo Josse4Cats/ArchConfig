@@ -11,14 +11,14 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 ## Launch
 
 ## Left bar
-polybar log -c ~/.config/polybar/current.ini &
-polybar secondary -c ~/.config/polybar/current.ini &
-polybar terciary -c ~/.config/polybar/current.ini &
-polybar quaternary -c ~/.config/polybar/current.ini &
+polybar logo -c ~/.config/polybar/current.ini &
+polybar date -c ~/.config/polybar/current.ini &
+polybar ethernet -c ~/.config/polybar/current.ini &
+polybar vpn -c ~/.config/polybar/current.ini &
 
 ## Right bar
-polybar top -c ~/.config/polybar/current.ini &
-polybar primary -c ~/.config/polybar/current.ini &i
+polybar tray -c ~/.config/polybar/current.ini &
+polybar sysmenu -c ~/.config/polybar/current.ini &i
 polybar target -c  ~/.config/polybar/current.ini &i
 
 
