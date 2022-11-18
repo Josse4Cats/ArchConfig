@@ -31,6 +31,13 @@ M.general = {
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "save file" },
 
+    -- run python 
+    ["<C-b>"] = { "<cmd> !clear;python3 % <CR>", "Run Python" },
+
+ -- exit wo save 
+    ["<C-q>"] = { "<cmd> q! <CR>", "Exit wo Save" },
+
+
     -- Copy all
     ["<C-c>"] = { "<cmd> %y+ <CR>", "copy whole file" },
 
